@@ -1,0 +1,8 @@
+/* Tailwind handles most layout and spacing.
+   These imports ensure your design tokens override defaults. */
+
+@import "../../design-system/colors.css";
+@import "../../design-system/spacing.css";
+@import "../../design-system/typography.css";
+
+/* Add any prototype-specific styles here */

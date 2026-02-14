@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowbite Snippets</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Custom Design Tokens -->
+  <link rel="stylesheet" href="../../design-system/colors.css">
+  <link rel="stylesheet" href="../../design-system/spacing.css">
+  <link rel="stylesheet" href="../../design-system/typography.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 text-[var(--color-text)]">
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3">
+        <span class="self-center text-xl font-semibold whitespace-nowrap">My Prototype</span>
+      </a>
+      <div class="flex items-center space-x-3">
+        <a href="index.html"
+           class="text-gray-700 hover:text-blue-700 font-medium text-sm px-3 py-2">
+          &larr; Back to Template
+        </a>
+        <a href="flowbite.html"
+           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">
+          Flowbite Snippets
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-screen-xl mx-auto p-6">
+
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Flowbite Component Snippets</h1>
+      <p class="text-gray-500 text-lg">Copy-paste ready Flowbite components for your prototypes. Each section includes the rendered component and its HTML source.</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-white border border-gray-200 rounded-lg p-6 mb-10">
+      <h2 class="text-lg font-semibold text-gray-900 mb-3">Components</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+        <a href="#buttons" class="text-blue-700 hover:underline">1. Buttons</a>
+        <a href="#button-group" class="text-blue-700 hover:underline">2. Button Group</a>
+        <a href="#badges" class="text-blue-700 hover:underline">3. Badges</a>
+        <a href="#alerts" class="text-blue-700 hover:underline">4. Alerts</a>
+        <a href="#cards" class="text-blue-700 hover:underline">5. Cards</a>
+        <a href="#forms" class="text-blue-700 hover:underline">6. Form Inputs</a>
+        <a href="#table" class="text-blue-700 hover:underline">7. Table</a>
+        <a href="#modal" class="text-blue-700 hover:underline">8. Modal</a>
+        <a href="#dropdown" class="text-blue-700 hover:underline">9. Dropdown</a>
+        <a href="#tabs" class="text-blue-700 hover:underline">10. Tabs</a>
+        <a href="#breadcrumb" class="text-blue-700 hover:underline">11. Breadcrumb</a>
+        <a href="#pagination" class="text-blue-700 hover:underline">12. Pagination</a>
+        <a href="#toast" class="text-blue-700 hover:underline">13. Toast</a>
+        <a href="#accordion" class="text-blue-700 hover:underline">14. Accordion</a>
+        <a href="#sidebar" class="text-blue-700 hover:underline">15. Sidebar</a>
+      </div>
+    </nav>
+
+
+    <!-- ========================================== -->
+    <!-- 1. BUTTONS -->
+    <!-- ========================================== -->
+    <section id="buttons" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">1. Buttons</h2>
+      <p class="text-gray-500 text-sm mb-4">Standard button variants for primary actions, secondary actions, and destructive operations.</p>
+
+      <!-- Live Preview -->
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3 flex flex-wrap gap-3 items-center">
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Primary</button>
+        <button type="button" class="text-blue-700 bg-white border border-blue-700 hover:bg-blue-50 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Outline</button>
+        <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5">Danger</button>
+        <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5">Success</button>
+        <button type="button" class="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5">Default</button>
+        <button disabled type="button" class="text-white bg-blue-400 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5">Disabled</button>
+      </div>
+
+      <!-- Source Code -->
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Primary&lt;/button&gt;
+
+&lt;button type="button" class="text-blue-700 bg-white border border-blue-700 hover:bg-blue-50 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Outline&lt;/button&gt;
+
+&lt;button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Danger&lt;/button&gt;
+
+&lt;button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Success&lt;/button&gt;
+
+&lt;button type="button" class="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Default&lt;/button&gt;
+
+&lt;button disabled type="button" class="text-white bg-blue-400 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5"&gt;Disabled&lt;/button&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 2. BUTTON GROUP -->
+    <!-- ========================================== -->
+    <section id="button-group" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">2. Button Group</h2>
+      <p class="text-gray-500 text-sm mb-4">Group related actions together in a single row.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <div class="inline-flex rounded-md shadow-sm" role="group">
+          <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">Profile</button>
+          <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">Settings</button>
+          <button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">Messages</button>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;div class="inline-flex rounded-md shadow-sm" role="group"&gt;
+  &lt;button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700"&gt;Profile&lt;/button&gt;
+  &lt;button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700"&gt;Settings&lt;/button&gt;
+  &lt;button type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700"&gt;Messages&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 3. BADGES -->
+    <!-- ========================================== -->
+    <section id="badges" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">3. Badges</h2>
+      <p class="text-gray-500 text-sm mb-4">Small labels for status indicators, counts, and categories.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3 flex flex-wrap gap-3 items-center">
+        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Default</span>
+        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Dark</span>
+        <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Red</span>
+        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Green</span>
+        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Yellow</span>
+        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Indigo</span>
+        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Purple</span>
+        <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">Pink</span>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"&gt;Default&lt;/span&gt;
+&lt;span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded"&gt;Red&lt;/span&gt;
+&lt;span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"&gt;Green&lt;/span&gt;
+&lt;span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded"&gt;Yellow&lt;/span&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 4. ALERTS -->
+    <!-- ========================================== -->
+    <section id="alerts" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">4. Alerts</h2>
+      <p class="text-gray-500 text-sm mb-4">Contextual feedback messages for user actions and system status.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3 space-y-3">
+        <div class="p-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert">
+          <span class="font-medium">Info alert!</span> This is an informational message.
+        </div>
+        <div class="p-4 text-sm text-red-800 rounded-lg bg-red-50" role="alert">
+          <span class="font-medium">Danger alert!</span> Something went wrong.
+        </div>
+        <div class="p-4 text-sm text-green-800 rounded-lg bg-green-50" role="alert">
+          <span class="font-medium">Success alert!</span> Your changes have been saved.
+        </div>
+        <div class="p-4 text-sm text-yellow-800 rounded-lg bg-yellow-50" role="alert">
+          <span class="font-medium">Warning alert!</span> Please review before continuing.
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;div class="p-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert"&gt;
+  &lt;span class="font-medium"&gt;Info alert!&lt;/span&gt; This is an informational message.
+&lt;/div&gt;
+
+&lt;div class="p-4 text-sm text-red-800 rounded-lg bg-red-50" role="alert"&gt;
+  &lt;span class="font-medium"&gt;Danger alert!&lt;/span&gt; Something went wrong.
+&lt;/div&gt;
+
+&lt;div class="p-4 text-sm text-green-800 rounded-lg bg-green-50" role="alert"&gt;
+  &lt;span class="font-medium"&gt;Success alert!&lt;/span&gt; Your changes have been saved.
+&lt;/div&gt;
+
+&lt;div class="p-4 text-sm text-yellow-800 rounded-lg bg-yellow-50" role="alert"&gt;
+  &lt;span class="font-medium"&gt;Warning alert!&lt;/span&gt; Please review before continuing.
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 5. CARDS -->
+    <!-- ========================================== -->
+    <section id="cards" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">5. Cards</h2>
+      <p class="text-gray-500 text-sm mb-4">Flexible containers for grouping related content.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <!-- Simple Card -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow p-5">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Simple Card</h5>
+            <p class="mb-3 text-sm text-gray-500">A basic card with a title and description text.</p>
+            <a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:underline">
+              Read more
+              <svg class="w-3 h-3 ms-2" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+            </a>
+          </div>
+
+          <!-- Card with CTA -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow p-5">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Card with Action</h5>
+            <p class="mb-3 text-sm text-gray-500">Includes a primary call-to-action button.</p>
+            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Get started</button>
+          </div>
+
+          <!-- Card with List -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow p-5">
+            <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900">Card with List</h5>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Feature one</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Feature two</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>Feature three</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;!-- Simple Card --&gt;
+&lt;div class="bg-white border border-gray-200 rounded-lg shadow p-5"&gt;
+  &lt;h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900"&gt;Simple Card&lt;/h5&gt;
+  &lt;p class="mb-3 text-sm text-gray-500"&gt;A basic card with a title and description.&lt;/p&gt;
+  &lt;a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:underline"&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Card with CTA --&gt;
+&lt;div class="bg-white border border-gray-200 rounded-lg shadow p-5"&gt;
+  &lt;h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900"&gt;Card with Action&lt;/h5&gt;
+  &lt;p class="mb-3 text-sm text-gray-500"&gt;Includes a primary call-to-action button.&lt;/p&gt;
+  &lt;button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"&gt;Get started&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 6. FORM INPUTS -->
+    <!-- ========================================== -->
+    <section id="forms" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">6. Form Inputs</h2>
+      <p class="text-gray-500 text-sm mb-4">Common form elements: text inputs, selects, checkboxes, toggles, and textareas.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <form class="max-w-lg space-y-5">
+          <!-- Text Input -->
+          <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email address</label>
+            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@company.com">
+          </div>
+
+          <!-- Select -->
+          <div>
+            <label for="role" class="block mb-2 text-sm font-medium text-gray-900">Role</label>
+            <select id="role" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+              <option selected>Choose a role</option>
+              <option>Designer</option>
+              <option>Developer</option>
+              <option>Product Manager</option>
+            </select>
+          </div>
+
+          <!-- Textarea -->
+          <div>
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+            <textarea id="message" rows="3" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="flex items-center">
+            <input id="terms" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900">I agree to the terms</label>
+          </div>
+
+          <!-- Toggle -->
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer">
+            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+            <span class="ms-3 text-sm font-medium text-gray-900">Enable notifications</span>
+          </label>
+
+          <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Submit</button>
+        </form>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;!-- Text Input --&gt;
+&lt;div&gt;
+  &lt;label for="email" class="block mb-2 text-sm font-medium text-gray-900"&gt;Email address&lt;/label&gt;
+  &lt;input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@company.com"&gt;
+&lt;/div&gt;
+
+&lt;!-- Select --&gt;
+&lt;div&gt;
+  &lt;label for="role" class="block mb-2 text-sm font-medium text-gray-900"&gt;Role&lt;/label&gt;
+  &lt;select id="role" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"&gt;
+    &lt;option selected&gt;Choose a role&lt;/option&gt;
+    &lt;option&gt;Designer&lt;/option&gt;
+    &lt;option&gt;Developer&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;div class="flex items-center"&gt;
+  &lt;input id="terms" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"&gt;
+  &lt;label for="terms" class="ms-2 text-sm font-medium text-gray-900"&gt;I agree to the terms&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Toggle --&gt;
+&lt;label class="inline-flex items-center cursor-pointer"&gt;
+  &lt;input type="checkbox" value="" class="sr-only peer"&gt;
+  &lt;div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"&gt;&lt;/div&gt;
+  &lt;span class="ms-3 text-sm font-medium text-gray-900"&gt;Enable notifications&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 7. TABLE -->
+    <!-- ========================================== -->
+    <section id="table" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">7. Table</h2>
+      <p class="text-gray-500 text-sm mb-4">Data tables with striped rows, hover states, and action buttons.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg overflow-hidden mb-3">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+              <tr>
+                <th scope="col" class="px-6 py-3">Name</th>
+                <th scope="col" class="px-6 py-3">Role</th>
+                <th scope="col" class="px-6 py-3">Status</th>
+                <th scope="col" class="px-6 py-3">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Alex Johnson</td>
+                <td class="px-6 py-4">Designer</td>
+                <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Active</span></td>
+                <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">Edit</a></td>
+              </tr>
+              <tr class="bg-white border-b hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Sam Rivera</td>
+                <td class="px-6 py-4">Developer</td>
+                <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Active</span></td>
+                <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">Edit</a></td>
+              </tr>
+              <tr class="bg-white hover:bg-gray-50">
+                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Jordan Lee</td>
+                <td class="px-6 py-4">PM</td>
+                <td class="px-6 py-4"><span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Pending</span></td>
+                <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;div class="overflow-x-auto"&gt;
+  &lt;table class="w-full text-sm text-left text-gray-500"&gt;
+    &lt;thead class="text-xs text-gray-700 uppercase bg-gray-50"&gt;
+      &lt;tr&gt;
+        &lt;th scope="col" class="px-6 py-3"&gt;Name&lt;/th&gt;
+        &lt;th scope="col" class="px-6 py-3"&gt;Role&lt;/th&gt;
+        &lt;th scope="col" class="px-6 py-3"&gt;Status&lt;/th&gt;
+        &lt;th scope="col" class="px-6 py-3"&gt;Action&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr class="bg-white border-b hover:bg-gray-50"&gt;
+        &lt;td class="px-6 py-4 font-medium text-gray-900"&gt;Alex Johnson&lt;/td&gt;
+        &lt;td class="px-6 py-4"&gt;Designer&lt;/td&gt;
+        &lt;td class="px-6 py-4"&gt;&lt;span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"&gt;Active&lt;/span&gt;&lt;/td&gt;
+        &lt;td class="px-6 py-4"&gt;&lt;a href="#" class="font-medium text-blue-600 hover:underline"&gt;Edit&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 8. MODAL -->
+    <!-- ========================================== -->
+    <section id="modal" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">8. Modal</h2>
+      <p class="text-gray-500 text-sm mb-4">Dialog overlay for confirmations, forms, or additional content.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <button data-modal-target="demo-modal" data-modal-toggle="demo-modal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5" type="button">
+          Open Modal
+        </button>
+
+        <!-- Modal -->
+        <div id="demo-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <div class="relative bg-white rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">Modal Title</h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="demo-modal">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/></svg>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4">
+                <p class="text-base leading-relaxed text-gray-500">This is an example modal dialog. You can place forms, confirmations, or any content here.</p>
+              </div>
+              <!-- Modal footer -->
+              <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="demo-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Confirm</button>
+                <button data-modal-hide="demo-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;!-- Trigger Button --&gt;
+&lt;button data-modal-target="demo-modal" data-modal-toggle="demo-modal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5" type="button"&gt;
+  Open Modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div id="demo-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"&gt;
+  &lt;div class="relative p-4 w-full max-w-2xl max-h-full"&gt;
+    &lt;div class="relative bg-white rounded-lg shadow"&gt;
+      &lt;div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t"&gt;
+        &lt;h3 class="text-xl font-semibold text-gray-900"&gt;Modal Title&lt;/h3&gt;
+        &lt;button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="demo-modal"&gt;&amp;times;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="p-4 md:p-5 space-y-4"&gt;
+        &lt;p class="text-base text-gray-500"&gt;Modal body content goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b"&gt;
+        &lt;button data-modal-hide="demo-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5"&gt;Confirm&lt;/button&gt;
+        &lt;button data-modal-hide="demo-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5"&gt;Cancel&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 9. DROPDOWN -->
+    <!-- ========================================== -->
+    <section id="dropdown" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">9. Dropdown</h2>
+      <p class="text-gray-500 text-sm mb-4">Toggleable menu for navigation or action lists.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <button id="dropdownButton" data-dropdown-toggle="dropdown-menu" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center" type="button">
+          Options
+          <svg class="w-2.5 h-2.5 ms-3" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+        </button>
+        <div id="dropdown-menu" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+          <ul class="py-2 text-sm text-gray-700">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Profile</a></li>
+          </ul>
+          <div class="py-2">
+            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Sign out</a>
+          </div>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;button id="dropdownButton" data-dropdown-toggle="dropdown-menu" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center" type="button"&gt;
+  Options
+  &lt;svg class="w-2.5 h-2.5 ms-3" fill="none" viewBox="0 0 10 6"&gt;&lt;path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/&gt;&lt;/svg&gt;
+&lt;/button&gt;
+
+&lt;div id="dropdown-menu" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"&gt;
+  &lt;ul class="py-2 text-sm text-gray-700"&gt;
+    &lt;li&gt;&lt;a href="#" class="block px-4 py-2 hover:bg-gray-100"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="block px-4 py-2 hover:bg-gray-100"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="block px-4 py-2 hover:bg-gray-100"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="py-2"&gt;
+    &lt;a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100"&gt;Sign out&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 10. TABS -->
+    <!-- ========================================== -->
+    <section id="tabs" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">10. Tabs</h2>
+      <p class="text-gray-500 text-sm mb-4">Organize content into switchable panels.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <div class="mb-4 border-b border-gray-200">
+          <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="demo-tab" data-tabs-toggle="#demo-tab-content" role="tablist">
+            <li class="me-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+            </li>
+          </ul>
+        </div>
+        <div id="demo-tab-content">
+          <div class="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <p class="text-sm text-gray-500">This is the <strong>Profile</strong> tab content. Add user info, avatars, and preferences here.</p>
+          </div>
+          <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <p class="text-sm text-gray-500">This is the <strong>Dashboard</strong> tab content. Add charts, stats, and summaries here.</p>
+          </div>
+          <div class="hidden p-4 rounded-lg" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <p class="text-sm text-gray-500">This is the <strong>Settings</strong> tab content. Add configuration options here.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;div class="mb-4 border-b border-gray-200"&gt;
+  &lt;ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="demo-tab" data-tabs-toggle="#demo-tab-content" role="tablist"&gt;
+    &lt;li class="me-2" role="presentation"&gt;
+      &lt;button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab"&gt;Profile&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li class="me-2" role="presentation"&gt;
+      &lt;button class="inline-block p-4 border-b-2 rounded-t-lg" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"&gt;Dashboard&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li class="me-2" role="presentation"&gt;
+      &lt;button class="inline-block p-4 border-b-2 rounded-t-lg" id="settings-tab" data-tabs-target="#settings" type="button" role="tab"&gt;Settings&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="demo-tab-content"&gt;
+  &lt;div class="hidden p-4 rounded-lg" id="profile" role="tabpanel"&gt;
+    &lt;p class="text-sm text-gray-500"&gt;Profile tab content here.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel"&gt;
+    &lt;p class="text-sm text-gray-500"&gt;Dashboard tab content here.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="hidden p-4 rounded-lg" id="settings" role="tabpanel"&gt;
+    &lt;p class="text-sm text-gray-500"&gt;Settings tab content here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 11. BREADCRUMB -->
+    <!-- ========================================== -->
+    <section id="breadcrumb" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">11. Breadcrumb</h2>
+      <p class="text-gray-500 text-sm mb-4">Wayfinding navigation showing the current page hierarchy.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+              <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+                <svg class="w-3 h-3 me-2.5" fill="currentColor" viewBox="0 0 20 20"><path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/></svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+                <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2">Projects</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2">Current Page</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;nav class="flex" aria-label="Breadcrumb"&gt;
+  &lt;ol class="inline-flex items-center space-x-1 md:space-x-2"&gt;
+    &lt;li class="inline-flex items-center"&gt;
+      &lt;a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;div class="flex items-center"&gt;
+        &lt;svg class="w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10"&gt;&lt;path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/&gt;&lt;/svg&gt;
+        &lt;a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600"&gt;Projects&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li aria-current="page"&gt;
+      &lt;div class="flex items-center"&gt;
+        &lt;svg class="w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10"&gt;&lt;path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/&gt;&lt;/svg&gt;
+        &lt;span class="ms-1 text-sm font-medium text-gray-500"&gt;Current Page&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 12. PAGINATION -->
+    <!-- ========================================== -->
+    <section id="pagination" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">12. Pagination</h2>
+      <p class="text-gray-500 text-sm mb-4">Navigate between pages of content or data.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <nav aria-label="Page navigation">
+          <ul class="inline-flex -space-x-px text-sm">
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">Previous</a>
+            </li>
+            <li><a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">1</a></li>
+            <li><a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a></li>
+            <li><a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">3</a></li>
+            <li><a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</a></li>
+            <li><a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</a></li>
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;nav aria-label="Page navigation"&gt;
+  &lt;ul class="inline-flex -space-x-px text-sm"&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100"&gt;Previous&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100"&gt;Next&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 13. TOAST -->
+    <!-- ========================================== -->
+    <section id="toast" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">13. Toast</h2>
+      <p class="text-gray-500 text-sm mb-4">Non-intrusive notification messages.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3 space-y-4">
+        <!-- Success Toast -->
+        <div class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow" role="alert">
+          <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/></svg>
+          </div>
+          <div class="ms-3 text-sm font-normal">Item saved successfully.</div>
+          <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8">
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/></svg>
+          </button>
+        </div>
+
+        <!-- Error Toast -->
+        <div class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow" role="alert">
+          <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/></svg>
+          </div>
+          <div class="ms-3 text-sm font-normal">Something went wrong.</div>
+          <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8">
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;!-- Success Toast --&gt;
+&lt;div class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow" role="alert"&gt;
+  &lt;div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg"&gt;
+    &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;&lt;path d="M10 .5a9.5 9.5 0 1 0 ..."/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class="ms-3 text-sm font-normal"&gt;Item saved successfully.&lt;/div&gt;
+  &lt;button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg p-1.5 hover:bg-gray-100 h-8 w-8"&gt;&amp;times;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Error Toast --&gt;
+&lt;div class="flex items-center w-full max-w-xs p-4 text-gray-500 bg-white rounded-lg shadow" role="alert"&gt;
+  &lt;div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg"&gt;
+    &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;&lt;path d="M10 .5a9.5 9.5 0 1 0 ..."/&gt;&lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class="ms-3 text-sm font-normal"&gt;Something went wrong.&lt;/div&gt;
+  &lt;button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg p-1.5 hover:bg-gray-100 h-8 w-8"&gt;&amp;times;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 14. ACCORDION -->
+    <!-- ========================================== -->
+    <section id="accordion" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">14. Accordion</h2>
+      <p class="text-gray-500 text-sm mb-4">Collapsible content sections for FAQs and long-form content.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <div id="accordion-demo" data-accordion="collapse">
+          <h2 id="accordion-heading-1">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-100" data-accordion-target="#accordion-body-1" aria-expanded="true" aria-controls="accordion-body-1">
+              <span>What is Flowbite?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+            <div class="p-5 border border-b-0 border-gray-200">
+              <p class="text-sm text-gray-500">Flowbite is an open-source component library built on top of Tailwind CSS. It provides interactive UI components like modals, dropdowns, navbars, and more.</p>
+            </div>
+          </div>
+
+          <h2 id="accordion-heading-2">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-100" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+              <span>How do I use it in this project?</span>
+              <svg data-accordion-icon class="w-3 h-3 shrink-0" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
+            <div class="p-5 border border-b-0 border-gray-200">
+              <p class="text-sm text-gray-500">Flowbite CSS and JS are already loaded via CDN in the template. Just copy the HTML snippets from this page directly into your prototype.</p>
+            </div>
+          </div>
+
+          <h2 id="accordion-heading-3">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 rounded-b-xl hover:bg-gray-100" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+              <span>Can I customize the components?</span>
+              <svg data-accordion-icon class="w-3 h-3 shrink-0" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
+            <div class="p-5 border border-t-0 border-gray-200 rounded-b-xl">
+              <p class="text-sm text-gray-500">Yes. All components use Tailwind utility classes, so you can change colors, spacing, sizes, and more by editing the class names directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;div id="accordion-demo" data-accordion="collapse"&gt;
+  &lt;h2 id="accordion-heading-1"&gt;
+    &lt;button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-100" data-accordion-target="#accordion-body-1" aria-expanded="true"&gt;
+      &lt;span&gt;Question here&lt;/span&gt;
+      &lt;svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="none" viewBox="0 0 10 6"&gt;&lt;path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/h2&gt;
+  &lt;div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1"&gt;
+    &lt;div class="p-5 border border-b-0 border-gray-200"&gt;
+      &lt;p class="text-sm text-gray-500"&gt;Answer content here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Repeat for additional items --&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 15. SIDEBAR -->
+    <!-- ========================================== -->
+    <section id="sidebar" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">15. Sidebar</h2>
+      <p class="text-gray-500 text-sm mb-4">Vertical navigation panel for app-style layouts.</p>
+
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-3">
+        <aside class="w-64" aria-label="Sidebar example">
+          <div class="px-3 py-4 overflow-y-auto bg-gray-50 rounded-lg">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 22 21"><path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/><path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/></svg>
+                  <span class="ms-3">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 18 18"><path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/></svg>
+                  <span class="ms-3">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 20 20"><path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/><path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.427 1.427a2.96 2.96 0 0 1-1.515.81l-3.456.69a1 1 0 0 1-1.182-1.183l.69-3.456Z"/><path d="M10.043 8.457a1 1 0 0 1 1.414 0l3.086 3.086a1 1 0 0 1 0 1.414l-6.117 6.117a1 1 0 0 1-.706.293H5.586a1 1 0 0 1-.707-.293l-.086-.086a1 1 0 0 1 0-1.414l5.25-5.25Z"/></svg>
+                  <span class="ms-3">Documents</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 20 18"><path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/></svg>
+                  <span class="ms-3">Team</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+                  <span class="ms-3">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <details class="bg-gray-900 rounded-lg">
+        <summary class="text-green-400 text-sm font-mono px-4 py-3 cursor-pointer hover:bg-gray-800 rounded-lg">View HTML source</summary>
+        <pre class="text-gray-300 text-sm p-4 overflow-x-auto"><code>&lt;aside class="w-64" aria-label="Sidebar"&gt;
+  &lt;div class="px-3 py-4 overflow-y-auto bg-gray-50 rounded-lg"&gt;
+    &lt;ul class="space-y-2 font-medium"&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group"&gt;
+          &lt;!-- SVG icon --&gt;
+          &lt;span class="ms-3"&gt;Dashboard&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-200 group"&gt;
+          &lt;!-- SVG icon --&gt;
+          &lt;span class="ms-3"&gt;Projects&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;!-- Add more nav items as needed --&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;</code></pre>
+      </details>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-screen-xl mx-auto p-6 mt-8 border-t border-gray-200">
+    <p class="text-sm text-gray-400">Built with Tailwind CSS &amp; Flowbite &mdash; AI Prototyping Workspace</p>
+  </footer>
+
+  <!-- Flowbite JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

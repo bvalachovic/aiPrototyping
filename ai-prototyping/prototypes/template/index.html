@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototype Template</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Custom Design Tokens -->
+  <link rel="stylesheet" href="../../design-system/colors.css">
+  <link rel="stylesheet" href="../../design-system/spacing.css">
+  <link rel="stylesheet" href="../../design-system/typography.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 text-[var(--color-text)]">
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3">
+        <span class="self-center text-xl font-semibold whitespace-nowrap">My Prototype</span>
+      </a>
+      <div class="flex items-center space-x-3">
+        <a href="flowbite.html"
+           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">
+          Flowbite Snippets
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-screen-xl mx-auto p-6">
+
+    <!-- Page Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Prototype Template</h1>
+      <p class="text-gray-500 text-lg">Start building your prototype below. Use Tailwind classes and Flowbite components.</p>
+    </div>
+
+    <!-- Starter Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-2">Getting Started</h2>
+        <p class="text-gray-500 mb-4">Replace these cards with your own content. Each prototype folder is self-contained.</p>
+        <a href="#" class="text-blue-700 hover:underline font-medium text-sm">Learn more &rarr;</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-2">Design Tokens</h2>
+        <p class="text-gray-500 mb-4">Colors, spacing, and typography are defined in <code class="text-sm bg-gray-100 px-1 py-0.5 rounded">/design-system/</code>.</p>
+        <a href="#" class="text-blue-700 hover:underline font-medium text-sm">View tokens &rarr;</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-2">Flowbite Components</h2>
+        <p class="text-gray-500 mb-4">Browse copy-paste Flowbite snippets for buttons, tables, modals, and more.</p>
+        <a href="flowbite.html" class="text-blue-700 hover:underline font-medium text-sm">View snippets &rarr;</a>
+      </div>
+
+    </div>
+
+    <!-- Placeholder Section -->
+    <section class="bg-white border border-dashed border-gray-300 rounded-lg p-12 text-center">
+      <svg class="mx-auto mb-4 w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 4v16m8-8H4"/>
+      </svg>
+      <h3 class="text-lg font-medium text-gray-500 mb-1">Your content goes here</h3>
+      <p class="text-sm text-gray-400">Ask your AI agent to generate layouts, forms, dashboards, or any UI you need.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-screen-xl mx-auto p-6 mt-8 border-t border-gray-200">
+    <p class="text-sm text-gray-400">Built with Tailwind CSS &amp; Flowbite &mdash; AI Prototyping Workspace</p>
+  </footer>
+
+  <!-- Flowbite JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
