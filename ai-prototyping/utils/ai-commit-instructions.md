@@ -107,6 +107,8 @@ Every prototype folder should contain at minimum:
 | ----- | -------- |
 | `index.html` | Main prototype page |
 | `flowbite.html` | Component snippet reference |
+| `data-example.html` | Data-driven table example (loaded from JSON) |
+| `data.json` | Mock data file -- replace with your own data |
 | `ai-guidelines.md` | Prototype-specific AI rules (customize per project) |
 | `styles.css` | Custom styles (design token imports pre-configured) |
 | `script.js` | Custom interactivity |

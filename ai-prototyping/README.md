@@ -28,11 +28,13 @@ When you copy the template, you get these files:
 | ------ | --------- |
 | `index.html` | Your main prototype page with Tailwind, Flowbite, and design tokens pre-loaded |
 | `flowbite.html` | A reference page with 15 copy-paste Flowbite component snippets |
+| `data-example.html` | A working data-driven table loaded from JSON (search, filter, edit, delete) |
+| `data.json` | Mock data file -- swap in your own data to power tables and lists |
 | `ai-guidelines.md` | Prototype-specific AI rules -- customize for your project |
 | `styles.css` | Prototype-specific styles (design token imports are pre-configured) |
 | `script.js` | Add any interactive behavior here |
 
-Click the **"Flowbite Snippets"** button in the navbar to browse ready-to-use components: buttons, cards, tables, modals, forms, tabs, and more.
+Click the **"Flowbite Snippets"** button in the navbar to browse ready-to-use components, or the **"Data-Driven Example"** card to see a table populated from JSON.
 
 ---
 
@@ -51,12 +53,17 @@ ai-prototyping/
     template/                # Starter template
       index.html
       flowbite.html
+      data-example.html      # Data-driven table example
+      data.json              # Mock data for the example
+      ai-guidelines.md       # Prototype-specific AI rules
       styles.css
       script.js
     my-project/              # Your prototype (copy of template)
       index.html
       flowbite.html
-      ai-guidelines.md       # Prototype-specific AI rules
+      data-example.html
+      data.json
+      ai-guidelines.md
       styles.css
       script.js
   utils/
